@@ -27,3 +27,16 @@ curl --cacert <PATH_TO_CA_CERTIFICATE> --location --request POST 'https://eic.st
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer <access-token>' \
 -d '{"action": "INITIALIZE"}'
+
+
+
+curl --cacert <PATH_TO_CA_CERTIFICATE> --location --request GET 'https://<eic-host>/app-lifecycle-management/v3/apps/<APP_ID>' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer <access-token>'
+
+
+
+curl --cacert <PATH_TO_CA_CERTIFICATE> --location --request PUT 'https://<eic-host>/app-lifecycle-management/v3/apps/<APP_ID>/mode' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer <access-token>' \
+-d '{"mode": "ENABLED"}'
