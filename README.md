@@ -9,4 +9,4 @@ https://<eic-host>/auth/realms/master/protocol/openid-connect/token \
 --data "grant_type=client_credentials&client_id=<IAM_CLIENT_ID>"
 
 
-curl --cacert <PATH_TO_CA_CERTIFICATE> --request POST \ https:///auth/realms/master/protocol/openid-connect/token \ --header ‘content-type: application/x-www-form-urlencoded’ \ --data “grant_type=client_credentials&client_id=<IAM_CLIENT_ID>&client_secret=<IAM_CLIENT_SECRET>”
+curl --cacert <PATH_TO_CA_CERTIFICATE> --request POST \ https://https://eic.stsn22p1eic08.stsoss.sero.xgic.ericsson.se/auth/realms/master/protocol/openid-connect/token \ --header ‘content-type: application/x-www-form-urlencoded’ \ --data “grant_type=client_credentials&client_id=<IAM_CLIENT_ID>&client_secret=<IAM_CLIENT_SECRET>”
