@@ -16,3 +16,8 @@ curl --cacert <PATH_TO_CA_CERTIFICATE> --location --request POST 'https://eic.st
 --header 'Authorization: Bearer <access-token>' \
 --header 'accept: application/json' \
 --form 'file=@"<PATH_TO_CSAR>/examplerAppPackage.csar"'
+
+
+curl --cacert <PATH_TO_CA_CERTIFICATE> --location --request GET 'https://<eic-host>/app-onboarding/v2/onboarding-jobs/<JOB_ID>' \
+--header 'Authorization: Bearer <access-token>' \
+--header 'accept: application/json'
