@@ -18,6 +18,12 @@ curl --cacert <PATH_TO_CA_CERTIFICATE> --location --request POST 'https://eic.st
 --form 'file=@"<PATH_TO_CSAR>/examplerAppPackage.csar"'
 
 
-curl --cacert <PATH_TO_CA_CERTIFICATE> --location --request GET 'https://<eic-host>/app-onboarding/v2/onboarding-jobs/<JOB_ID>' \
+curl --cacert <PATH_TO_CA_CERTIFICATE> --location --request GET 'https://eic.stsn22p1eic08.stsoss.sero.xgic.ericsson.se/app-onboarding/v2/onboarding-jobs/<JOB_ID>' \
 --header 'Authorization: Bearer <access-token>' \
 --header 'accept: application/json'
+
+
+curl --cacert <PATH_TO_CA_CERTIFICATE> --location --request POST 'https://eic.stsn22p1eic08.stsoss.sero.xgic.ericsson.se/app-lifecycle-management/v3/apps/<APP_ID>/initialization-actions' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer <access-token>' \
+-d '{"action": "INITIALIZE"}'
